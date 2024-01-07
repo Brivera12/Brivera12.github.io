@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./servinglr.css">
+    <title>servicios</title>
+    <style>
+         
+        h1,h2,h3 {
+            color: #000000;
+            padding-bottom: 0px;
+            line-height: 1em;
+            font-weight: 800;
+        }
+        h1 {
+             font-size: 30px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .logo {
+            width: 180px;
+        }
+        #goUpBtn {
+           position: fixed;
+           bottom: 20px;
+           left: 0px;
+           background-color: #d4d7db80;
+           color: white;
+           border: none;
+           border-radius: 50%;
+           width: 50px;
+           height: 50px;
+           font-size: 24px;
+           cursor: pointer;
+           outline: none;
+           transition: opacity 0.3s, visibility 0.3s;
+           z-index: 999;
+        }
+        #goUpBtn:before {
+           content: '\2191';
+        }
+        #goUpBtn:hover {
+           opacity: 0.8;
+        }
+        html:hover #goUpBtn {
+           display: block;
+        }
+        .logo1,.logo2,.logo3 {
+            width: 310px;
+        }
+        .logo2 {
+            width: 400px;
+            height: 240px;
+        }
+        .logo3 {
+            height: 260px;
+            padding: 20px 0;
+        }
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            height: 60px;          
+        }
+        .navbar-right {
+            display: flex; 
+        }
+        .navbar-right ul li a { 
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .navbar-right ul li a:hover { 
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 20px;
+            place-content: center; 
+        }
+        .logo-samsung {
+            padding: 0 30px;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+        .logo-lg {
+            border: 1px solid white;
+            padding: 0 70px;
+            border-radius: 8px;
+        }
+        .logo-panasonic {
+            padding: 0 30px;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+        .logo-sony {
+            border: 1px solid white;
+            border-radius: 8px;
+            margin: 0 40px;
+        }
+        .untitled-total {
+            display: flex;
+            margin: 0px;
+           
+        }
+    
+        .untitled {
+            background-color: #c5caca;
+            border: 0px solid #ddd;
+            padding: 50px;
+            text-align: justify;
+        }
+        .untitled2 {
+            background-color: #c5caca;
+            border: 0px solid #ddd;
+            padding: 50px;
+            text-align: justify;  
+        }
+        .untitled3 {
+            border: 0px solid #ddd;
+            padding: 50px;
+            text-align: justify; 
+            background-color: #c5caca; 
+        }
+        .testimonial {
+            width: 250px;
+            height: 340px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            /*border-radius: 10px;*/
+            margin: 16px auto;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: grid; 
+            position: 0px;       
+        }
+        .comillas {
+         margin: -50px 0 30px;
+        }
+        .testimonial-orden {
+            display: flex;
+            padding: 12px 50px;
+        }
+        .mantenimiento {
+            text-align: center;
+            background-color: #001659!important;
+            color: #fff;
+            border-bottom: 0px solid var(--very-light-pink); 
+            font-size: 26px;
+            padding: 40px;
+            font-weight: bold;
+        }
+        .resenas {
+            text-align: center;
+            background-color: #1d49ce!important;
+            color: #fff;
+            text-align: center;
+            border-bottom: 0px solid var(--very-light-pink); 
+            font-size: 22px;
+            padding: 40px;
+            font-weight: bold;
+        }
+        .fotos {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-size: cover;
+        }
+        .name {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .ss {
+            background-color: #001659!important;
+            color: #fff;
+            border-bottom: 0px solid var(--very-light-pink);
+            padding: 60px;
+            text-align: justify;
+            font-size: 17px;  
+        }
+        .ss1 {
+            display: flex;
+        }
+        .sobre-nosotros {
+            border: 0px solid #ddd;
+            margin: 20px;
+            text-align: justify; 
+        }
+        .experiencia {
+            border: 0px solid #ddd;
+            margin: 20px;
+            text-align: justify; 
+        }
+        .contactos {
+            vertical-align: baseline;
+            background: 0 0;
+            text-align: center;
+        } 
+        .contactos1 {
+            text-align: center;
+            color: #FFFFFF;
+        }       
+        .numero-contacto {
+            text-decoration: none;
+        } 
+
+        @media (max-width: 800px) 
+        {
+            .logos{
+             grid-template-columns: repeat(auto-fill, 240px);
+            gap: 20px;
+            }
+            h3 {
+                text-align: center;
+                font-size: 22px;
+            }
+            .testimonial-orden {
+            display: grid;
+        }
+           .ss1 {
+            display: grid;
+           }
+           .bars__menu {
+            display: block;
+        }
+            .navbar-right ul {
+                display: none;
+            }
+            .contactos{
+                text-align: center;
+            }
+            .mantenimiento {
+                font-size: 17px;
+            }
+            .untitled-total {
+            display: grid;
+           }
+        }
+        
+        @media (max-width: 1000px) {
+           .logo2 {
+             width: 300px;
+           }
+        }  
+    
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://wa.me/3116852675" target="_blank" class="whatsapp-button">
+            <img src="./IMAGEN/whatsapp-logo.png" alt="WhatsApp">
+        </a>
+        <a href="tel:+573116852675" target="_blank" class="llamadas-button">
+            <img src="./IMAGEN/Captura-removebg-preview.png" alt="">
+        </a>
+    </div>
+    <nav>
+        <img src="./IMAGEN/Captura.PNG" alt="logo" class="logo">
+
+        <div class="navbar-right">
+            <ul>
+                <li><a href="">Marcas</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="bars__menu">
+            <span class="line1__bars_menu"></span>
+            <span class="line2__bars_menu"></span>
+            <span class="line3__bars_menu"></span>
+        </div> 
+        <div class="mobile-menu inactive">
+            <ul>
+                <li><a href="">Marcas</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+         <div class="mantenimiento">
+            <p>MANTENIMIENTO Y REPARACION DE TELEVISORES EN BARRANQUILLA Y AREA METROPOLITANA</p>
+         </div>
+    <div class="logos"> 
+        <div class="logo-lg">
+            <img src="./IMAGEN/logo_lg-removebg-preview.png" alt="">
+        </div>
+        <div class="logo-samsung">
+            <img src="./IMAGEN/samsung simple modificado.png" alt="">
+        </div>
+        <div class="logo-panasonic">
+            <img src="./IMAGEN/logo panasonic.PNG" alt="">
+        </div>
+        <div class="logo-sony">
+            <img src="./IMAGEN/sony_logo-removebg-preview.png" alt="" height="35" >
+        </div>
+    </div>
+      <div class="untitled-total">
+            <div class="untitled">
+            <h3 class="reparacion">REPARACION DE TELEVISORES EN BARRANQUILLA</h3>
+            <p>
+                <span>
+                    Nuestro servicio técnico especializado en la reparación y mantenimiento de televisores cubre toda el área de Barranquilla y sus municipios cercanos, ofreciendo soluciones a domicilio. Nos dedicamos a resolver cualquier inconveniente relacionado con televisores mediante un servicio autorizado que utiliza repuestos originales adquiridos directamente de las marcas.
+                </span>
+            </p>
+            <img src="./IMAGEN/Untitled (1).jpg" alt="logo1" class="logo1">
+        </div> 
+        <div class="untitled2">
+            <h3>FALLAS</h3>
+            <p>
+                <span>
+                    *El televisor enciende pero no muestra imagen, aunque sí emite sonido - Podemos resolver problemas como la presencia de líneas en la pantalla - daños en los LEDs - problemas con la Main Board o tarjetas - quedarse en el logo o cargando en aplicaciones - visión doble o morada - falta de encendido - daños por agua - problemas con la tarjeta del WiFi - visualización parcial en la pantalla - pérdida instantánea de imagen al encender - fallas en el botón de encendido - configuraciones incorrectas del control remoto (no proporcionamos controles).
+                </span>
+            </p>
+            <img src="./IMAGEN/Untitled2.png" alt="logo2" class="logo2">
+        </div>
+        <div class="untitled3">
+            <img src="./IMAGEN/trabajador de tv2.PNG" alt="logo3" class="logo3">
+            <h3>NO REALIZAMOS REPARACION DE PANTALLA ROTAS</h3>
+            <p>
+                <span>
+                    En estos casos, existen dos alternativas: reemplazar la pantalla con una original, o adaptar una nueva pantalla. La recomendación sería optar por la sustitución de la pantalla o considerar la adquisición de un televisor nuevo en estas circunstancias.
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="resenas">
+        <p>RESEÑAS DE NUESTROS CLIENTE</p>
+    </div>
+    <section class="testimonial-orden">
+     <div class="testimonial">
+        <div>
+            <img src="./IMAGEN/comillas 2.png" alt="" class="comillas">
+        </div>
+        <div>
+            <img src="./IMAGEN/alder amaya.PNG" alt="" class="fotos">
+        </div>  
+        <div>
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">   
+        </div>
+        <div class="contact-info">
+            <p>
+                <span>“</span>Buen servicio de reparacion, prestaron el servcio sin ningun contratiempo<span>“</span>
+            </p>
+        </div>
+        <div class="name">Alder Amaya</div>
+    </div>
+    <div class="testimonial">
+        <div> 
+            <img src="./IMAGEN/comillas 2.png" alt="" class="comillas">
+        </div>
+        <div>
+             <img src="./IMAGEN/jairo medina.PNG" alt="" class="fotos">
+        </div>
+        <div>
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">   
+        </div>
+        <div class="contact-info">
+            <p>
+                <span>“</span>Muchas gracias, mi televisor quedo en perfecto estado, recomiendo el servicio<span>“</span>
+            </p>
+        </div>
+        <div class="name">Jairo Medina</div>
+       </div>
+
+       <div class="testimonial">
+        <div>
+            <img src="./IMAGEN/comillas 2.png" alt="" class="comillas">
+        </div>
+        <div>
+             <img src="./IMAGEN/claudia gomez.PNG" alt="" class="fotos">
+        </div>
+
+        <div>
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">
+            <img src="./IMAGEN/estrellita.PNG" width="28" height="28">   
+        </div>
+        <div class="contact-info">
+            <p>
+                <span>“</span>Con Servicio tecnico mi experiencia fue amena, el servicio prestado cumplio con mis expectativas<span>“</span>
+            </p>
+        </div>
+        <div class="name">Claudia Gomez</div>
+     </div>
+    </section>
+
+    <div class="ss">
+        <div class="ss1">
+        <div class="sobre-nosotros">
+            <h3>
+                <span style="color:#FFFFFF">
+                    <strong> SOBRE NOSOTROS</strong>
+                </span>
+            </h3>
+            <p>
+                Somos una compañía independiente de Colombia dedicada a brindar servicios técnicos para la reparación, asistencia y cuidado de televisores.
+            </p>
+            <p>
+                Nuestra empresa no está asociada exclusivamente a una marca en particular, sino que ofrece servicios para múltiples marcas. No somos un centro de servicio autorizado de una empresa específica, sino que proporcionamos mantenimiento a televisores de todas las marcas disponibles en el mercado.
+            </p>
+        </div>
+        <div class="experiencia">
+             <h3>
+                <span style="color:#FFFFFF">
+                    <strong> 10 AÑOS DE EXPERIENCIA.</strong>
+                </span>
+             </h3>
+             <P>
+                Los técnicos que conforman nuestro equipo poseen una trayectoria de más de una década en el ámbito de la reparación de televisores. Esto garantiza que tus dispositivos electrónicos están siendo atendidos por profesionales con amplia experiencia y conocimiento en el campo.
+             </P>
+        </div>
+        </div>
+        <div class="contactos">
+            <h3 class="contactos1">
+                <span >CONTÁCTANOS</span>
+            </h3>
+            <div>
+                <p>
+                   <a href="tel:+573116852675" target="_blank" rel="noopener" class="numero-contacto">
+                    <span style="color: #ffffff;">
+                    <strong>311-685-2675</strong>
+                   </span>
+                 </a>
+                </p>
+                 <p>
+                    <span style="color: #ffffff;">Lunes a Sabado</span>
+                    <br>
+                    <span>08:00 am – 05:00 pm</span>
+                </p>
+            </div>
+        </div> 
+     </div>    
+    <footer>
+        <p>&copy; 2023 Servinglr | Derecho Reservado</p> 
+    </footer>
+        <a href="#top">
+            <button id="goUpBtn"></button>
+        </a>
+        <script src="./servinglr.js"></script>
+</body>
+</html>
