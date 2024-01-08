@@ -1,4 +1,4 @@
-    :root {
+   :root {
         --white: #FFFFFF;
         --black: #000000;
         --very-light-pink: #C7C7C7;
@@ -121,4 +121,262 @@
         text-align: left;
         border-bottom: 0px solid var(--very-light-pink);
         padding: 40px;  
+    }
+    h1,h2,h3 {
+        color: #000000;
+        padding-bottom: 0px;
+        line-height: 1em;
+        font-weight: 800;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+       font-size: 26px;
+    }
+    h3 {
+       font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.logo {
+    width: 180px;
+}
+#goUpBtn {
+   position: fixed;
+   bottom: 20px;
+   left: 0px;
+   background-color: #d4d7db80;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   font-size: 24px;
+   cursor: pointer;
+   outline: none;
+   transition: opacity 0.3s, visibility 0.3s;
+   z-index: 999;
+}
+#goUpBtn:before {
+   content: '\2191';
+}
+#goUpBtn:hover {
+   opacity: 0.8;
+}
+html:hover #goUpBtn {
+   display: block;
+}
+.logo1,.logo2,.logo3 {
+    width: 310px;
+}
+.logo2 {
+    width: 400px;
+    height: 240px;
+}
+.logo3 {
+    height: 260px;
+    padding: 20px 0;
+}
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;          
+}
+.navbar-right {
+    display: flex; 
+}
+.navbar-right ul li a { 
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar-right ul li a:hover { 
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    place-content: center; 
+}
+.logo-samsung {
+    padding: 0 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.logo-lg {
+    border: 1px solid white;
+    padding: 0 70px;
+    border-radius: 8px;
+}
+.logo-panasonic {
+    padding: 0 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.logo-sony {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 0 40px;
+}
+.untitled-total {
+    display: flex;
+    margin: 0px;
+   
+}
+
+.untitled {
+    background-color: #c5caca;
+    border: 0px solid #ddd;
+    padding: 50px;
+    text-align: justify;
+}
+.untitled2 {
+    background-color: #c5caca;
+    border: 0px solid #ddd;
+    padding: 50px;
+    text-align: justify;  
+}
+.untitled3 {
+    border: 0px solid #ddd;
+    padding: 50px;
+    text-align: justify; 
+    background-color: #c5caca; 
+}
+.testimonial {
+    width: 250px;
+    height: 340px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /*border-radius: 10px;*/
+    margin: 16px auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: grid; 
+    position: 0px;       
+}
+.comillas {
+ margin: -50px 0 30px;
+}
+.testimonial-orden {
+    display: flex;
+    padding: 12px 50px;
+}
+.mantenimiento {
+    text-align: center;
+    background-color: #001659!important;
+    color: #fff;
+    border-bottom: 0px solid var(--very-light-pink); 
+    font-size: 26px;
+    padding: 40px;
+    font-weight: bold;
+}
+.resenas {
+    text-align: center;
+    background-color: #1d49ce!important;
+    color: #fff;
+    text-align: center;
+    border-bottom: 0px solid var(--very-light-pink); 
+    font-size: 22px;
+    padding: 40px;
+    font-weight: bold;
+}
+.fotos {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-size: cover;
+}
+.name {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+}
+.ss {
+    background-color: #001659!important;
+    color: #fff;
+    border-bottom: 0px solid var(--very-light-pink);
+    padding: 60px;
+    text-align: justify;
+    font-size: 17px;  
+}
+.ss1 {
+    display: flex;
+}
+.sobre-nosotros {
+    border: 0px solid #ddd;
+    margin: 20px;
+    text-align: justify; 
+}
+.experiencia {
+    border: 0px solid #ddd;
+    margin: 20px;
+    text-align: justify; 
+}
+.contactos {
+    vertical-align: baseline;
+    background: 0 0;
+    text-align: center;
+} 
+.contactos1 {
+    text-align: center;
+    color: #FFFFFF;
+}       
+.numero-contacto {
+    text-decoration: none;
+} 
+
+@media (max-width: 800px) 
+{
+    .logos{
+     grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    }
+    h3 {
+        text-align: center;
+        font-size: 22px;
+    }
+    .testimonial-orden {
+    display: grid;
+}
+   .ss1 {
+    display: grid;
    }
+   .bars__menu {
+    display: block;
+}
+    .navbar-right ul {
+        display: none;
+    }
+    .contactos{
+        text-align: center;
+    }
+    .mantenimiento {
+        font-size: 17px;
+    }
+    .untitled-total {
+    display: grid;
+   }
+}
+
+@media (max-width: 1000px) {
+   .logo2 {
+     width: 300px;
+   }
+}  
