@@ -14,6 +14,7 @@
     }
 
     /*menu hamburguesa*/
+    
     .bars__menu {
         width: 30px;
         height: 30px;
@@ -140,7 +141,7 @@
     }
 
     .logo {
-        width: 180px;
+        width: 150px;
     }
 /* regreso a la pagina inicial */
    
@@ -158,6 +159,7 @@
     }
 /* encabezado de la pagina */
     nav {
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
@@ -176,14 +178,14 @@
     }
     .navbar-right ul li a { 
         text-decoration: none;
-        color: var(--very-light-pink);
+       /* color: var(--very-light-pink); */
         border: 1px solid var(--white);
         padding: 8px;
         border-radius: 8px;
     }
     .navbar-right ul li a:hover { 
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
+        border: 1px solid var(--hospital-green);
+        color: var(--hospital-green);
     }
     .logos {
         display: flex;
@@ -319,18 +321,19 @@
        text-decoration: none;
     } 
 
-    @media (max-width: 700px) 
+    /* @Media */
+
+    @media (max-width: 500px){
+
+    .bars__menu { display: block;}
+    .navbar-right ul { display: none;}
+
+    }
+    @media (max-width: 900px) 
     {
 
-    .logo1,.logo3 {
-        width: 250px;
-    }
-    .logo2 {
-        height: 240px;
-    }
-    .logo3 {
-        height: 200px;
-        padding: 20px 0;
+    .logo1,.logo3, .logo2 {
+        width: 100%;
     }
     .testimonial {
         width: 200px;
@@ -348,10 +351,6 @@
     }
     .ss1 { display: grid;}
     .ss { padding: 10px; }
-    .bars__menu { display: block;}
-
-    .navbar-right ul { display: none;}
-
     .contactos{ text-align: center;}
 
     .mantenimiento {
@@ -362,8 +361,9 @@
     }
     }
 
-    @media (max-width: 1000px) {
-   .logo2 {
-     width: 250px;
+    @media (max-width: 1200px) {
+    .untitled-total {
+        display: grid;
     }
+   
     }  
