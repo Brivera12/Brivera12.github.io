@@ -214,15 +214,12 @@ footer {
     display: flex ;
 }
 .tv-samsung-5 {
-    width: 50.9%;
+    width: 50%;
     height: 100%;
 } 
-.tv-samsung-2 {
-    width: 29.9%;
-    height: 100%;
-}
+
 .tv-samsung-4  {
-   width: 51.4%;
+   width: 51.6%;
    height: 100%;
 }
 @media (max-width: 1200px) {
@@ -232,9 +229,6 @@ footer {
 .tv-samsung-5 {
     width: 49.7%;
 } 
-.tv-samsung-2 {
-    display: none;
-}
 .tv-samsung-4  {
    width: 49.7%;
 }
@@ -246,9 +240,6 @@ footer {
 .tv-samsung-5 {
     width: 49.5%;
 } 
-.tv-samsung-2 {
-    display: none;
-}
 .tv-samsung-4  {
    width: 49.5%;
 }
@@ -263,9 +254,6 @@ footer {
 
 .testimonial {
     width: 200px;
-}
-.tv-samsung-2 {
-    display: none;
 }
 .tv-samsung-5 {
     display: none;
