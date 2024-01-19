@@ -163,7 +163,7 @@ h3 {
 
 /* sobre nosotro y contacto sobre de pie de pagina*/
 .ss {
-    background-color: #5e7474!important;
+    background-color: #445353!important;
     color: #fff;
     border-bottom: 0px solid var(--very-light-pink);
     padding: 60px;
@@ -198,7 +198,7 @@ h3 {
 
 /* pie de pagina */
 footer {
-    background-color:#4e6161!important;
+    background-color:#3d4b4b!important;
     color: #fff;
     text-align: left;
     border-bottom: 0px solid var(--very-light-pink);
