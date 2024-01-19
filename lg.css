@@ -120,7 +120,7 @@ h3 {
 /* resenas */
 .resenas {
     text-align: center;
-    background-color: rgb(204, 14, 14)!important;
+    background-color: rgb(99, 25, 25)!important;
     color: #fff;
     text-align: center;
     border-bottom: 0px solid var(--very-light-pink); 
@@ -163,7 +163,7 @@ h3 {
 
 /* sobre nosotro y contacto sobre de pie de pagina*/
 .ss {
-    background-color: rgb(117, 12, 12)!important;
+    background-color: #5e7474!important;
     color: #fff;
     border-bottom: 0px solid var(--very-light-pink);
     padding: 60px;
@@ -198,7 +198,7 @@ h3 {
 
 /* pie de pagina */
 footer {
-    background-color:rgb(95, 19, 19)!important;
+    background-color:#4e6161!important;
     color: #fff;
     text-align: left;
     border-bottom: 0px solid var(--very-light-pink);
