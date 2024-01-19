@@ -213,6 +213,18 @@ footer {
 .tv-samsung{
     display: flex ;
 }
+.tv-samsung-5 {
+    width: 50.9%;
+    height: 100%;
+} 
+.tv-samsung-2 {
+    width: 29.9%;
+    height: 100%;
+}
+.tv-samsung-4  {
+   width: 51.4%;
+   height: 100%;
+}
 @media (max-width: 1200px) {
 .untitled-total {
    display: grid;
