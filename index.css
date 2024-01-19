@@ -20,6 +20,7 @@
         height: 30px;
         cursor: pointer;
         display: none;
+        margin: 20px;
     }
     .bars__menu span {
         display: block;
@@ -142,6 +143,8 @@
 
     .logo {
         width: 150px;
+        height: 90px;
+        margin: -10px;
     }
 /* regreso a la pagina inicial */
    
@@ -159,7 +162,7 @@
     }
 /* encabezado de la pagina */
     nav {
-        background-color: #ffffff;
+        background-color: #d2e0e0;
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
@@ -179,15 +182,16 @@
     .navbar-right ul li a { 
         text-decoration: none;
        /* color: var(--very-light-pink); */
-        border: 1px solid var(--white);
+        border: 0px solid var(--white);
         padding: 8px;
         border-radius: 8px;
     }
     .navbar-right ul li a:hover { 
-        border: 1px solid var(--hospital-green);
+        border: 0px solid var(--hospital-green);
         color: var(--hospital-green);
     }
     .logos {
+        background: #e6eeee;
         display: flex;
         justify-content: center;
         align-items: center; 
@@ -198,21 +202,21 @@
     }
     .logo-samsung {
         padding: 0 30px;
-        border: 1px solid white;
+        border: 0px solid white;
         border-radius: 8px;
     }
     .logo-lg {
-        border: 1px solid white;
+        border: 0px solid white;
         padding: 0 70px;
         border-radius: 8px;
     }
     .logo-panasonic {
         padding: 0 30px;
-        border: 1px solid white;
+        border: 0px solid white;
         border-radius: 8px;
     }
     .logo-sony {
-        border: 1px solid white;
+        border: 0px solid white;
         border-radius: 8px;
         margin: 0 40px;
     }
