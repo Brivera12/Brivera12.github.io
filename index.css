@@ -13,61 +13,8 @@
         font-family: 'Quicksand', sans-serif;
     }
 
-    /*menu hamburguesa*/
     
-    .bars__menu {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        display: none;
-        margin: 20px;
-    }
-    .bars__menu span {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: black;
-        margin-top: 6px;
-        transform-origin: 0px 100%;
-        transition: all 600ms;
-    }
-    .activeline1__bars_menu {
-        transform: rotate(45deg) translate(-2px, 1px);
-    }
-    .activeline2__bars_menu {
-        opacity: 0;
-        margin-left: -30px;
-    }
-    .activeline3__bars_menu {
-        transform: rotate(-45deg) translate(-4px, 2px);
-    }
-    .inactive {
-        display: none;
-    }
-    .mobile-menu {
-        position: absolute;
-        top: 60px;
-        padding: 24px;
-        right: 0px;
-        background-color: #FFFFFF;
-    }
-    .mobile-menu a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 24px;
-    }
-    .mobile-menu ul {
-        padding: 0;
-        margin: 24px 0 0;
-        list-style: none;  
-    }
-    .mobile-menu ul:nth-child(1) {
-        border-bottom: 0px solid var(--very-light-pink); 
-    }
-    .mobile-menu ul li {
-        margin-bottom: 24px; 
-    }
+   
 
      /* whatsapp*/
     .whatsapp-button {
@@ -190,6 +137,96 @@
         border: 0px solid var(--hospital-green);
         color: var(--hospital-green);
     }
+    .inactive {
+        display: none;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 70px;
+        padding: 24px;
+        right: 0px;
+        background-color: #FFFFFF;
+    }
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    .mobile-menu ul {
+        padding: 0;
+        margin: 24px 0 0;
+        list-style: none;  
+    }
+    .mobile-menu ul:nth-child(1) {
+        border-bottom: 0px solid var(--very-light-pink); 
+    }
+    .mobile-menu ul li {
+        margin-bottom: 24px; 
+    }
+    
+    /* samsung lg */
+    .inactive-2 {
+        display: none;
+    }
+    .samsung-lg {
+        position: absolute;
+        top: 70px;
+        padding: 28px;
+        right: 0px;
+        background-color: #ffff;
+    }
+    .samsung-lg a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 28px;
+    }
+    .samsung-lg ul {
+        padding: 0;
+        margin: 24px 0 0;
+        list-style: none;  
+    }
+    .samsung-lg ul:nth-child(1) {
+        border-bottom: 0px solid var(--very-light-pink); 
+    }
+    .samsung-lg ul li {
+        margin-bottom: 24px; 
+    }
+    .marcas, .marcas2 {
+        cursor: pointer;
+    }
+
+    /*menu hamburguesa*/
+    
+    .bars__menu {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: none;
+        margin: 20px;
+    }
+    .bars__menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 600ms;
+    }
+    .activeline1__bars_menu {
+        transform: rotate(45deg) translate(-2px, 1px);
+    }
+    .activeline2__bars_menu {
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .activeline3__bars_menu {
+        transform: rotate(-45deg) translate(-4px, 2px);
+    }
+
+    /* logos*/
     .logos {
         background: #e6eeee;
         display: flex;
@@ -262,7 +299,7 @@
     }
     .mantenimiento {
         text-align: center;
-        background-color: #001659!important;
+        background-color: #3877a1e7!important;
         color: #fff;
         border-bottom: 0px solid var(--very-light-pink); 
         font-size: 26px;
