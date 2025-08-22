@@ -297,10 +297,12 @@
     .mantenimiento {
         text-align: center;
         background-color: #3877a1e7!important;
-        color: #fff;
+        background-image: url("./IMAGEN/tv\ samsung\ 2.PNG");
+        background-size: cover;
+        color: #000000;
         border-bottom: 0px solid var(--very-light-pink); 
-        font-size: 26px;
-        padding: 40px;
+        font-size: 36px;
+        padding: 80px;
         font-weight: bold;
     }
     .resenas {
@@ -474,3 +476,4 @@
     }
    
     }  
+
