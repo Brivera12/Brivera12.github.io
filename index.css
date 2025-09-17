@@ -110,7 +110,7 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 20px;
-        border-bottom: 1px solid var(--very-light-pink);
+        border-bottom: 0px solid var(--very-light-pink);
     }
     .navbar-right ul {
         list-style: none;
@@ -477,6 +477,7 @@
     }
    
     }  
+
 
 
 
