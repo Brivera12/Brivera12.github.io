@@ -295,7 +295,6 @@
         padding: 12px 50px;
     }
     .mantenimiento {
-        position: relative;
         text-align: center;
         background-color: #3877a1e7!important;
         background-image: linear-gradient(rgba(56, 119, 161, 0.8), rgba(56, 119, 161, 0.8)), url("./IMAGEN/tv\ samsung\ 2.PNG");
@@ -477,6 +476,7 @@
     }
    
     }  
+
 
 
 
