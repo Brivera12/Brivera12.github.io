@@ -306,6 +306,11 @@
         padding: 80px;
         font-weight: bold;
     } 
+
+     .certificado{
+     color: #6d3232;
+     font-size: 28px;
+    }
     .resenas {
         text-align: center;
         background-color: #1d49ce!important;
