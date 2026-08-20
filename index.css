@@ -297,10 +297,10 @@
     }
     .mantenimiento {
         text-align: center;
-        background-color: #3877a1e7!important;
-        background-image: linear-gradient(rgba(56, 119, 161, 0.8), rgba(56, 119, 161, 0.8)), url("./IMAGEN/tv\ samsung\ 2.PNG");
+        background-color: #4985a3e7!important;
+        background-image: linear-gradient(rgba(131, 144, 153, 0.8), rgba(56, 119, 161, 0.8)), url("./IMAGEN/tv\ samsung\ 2.PNG");
         background-size: cover;
-        color: #ffffff;
+        color: #030303;
         border-bottom: 0px solid var(--very-light-pink); 
         font-size: 36px;
         padding: 80px;
@@ -472,7 +472,7 @@
     .contactos{ text-align: center;}
 
     .mantenimiento {
-        font-size: 17px;
+        font-size: 25px;
     }
     .untitled-total {
         display: grid;
