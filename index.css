@@ -272,17 +272,17 @@
 
     .untitled {
         border: 0px solid #ddd;
-        padding: 50px;
+        padding: 20px;
         text-align: justify;
     }
     .untitled2 {
         border: 0px solid #ddd;
-        padding: 50px;
+        padding: 20px;
         text-align: justify;  
     }
     .untitled3 {
         border: 0px solid #ddd;
-        padding: 50px;
+        padding: 20px;
         text-align: justify;  
     } 
     .testimonial {
@@ -307,12 +307,12 @@
     }
     .mantenimiento {
         text-align: center;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.63)), url("./IMAGEN/imagen\ de\ tv\ en\ reparacion.png");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.185)), url("./IMAGEN/imagen\ de\ tv\ en\ reparacion.png");
         background-size: cover;
         color: #ece8e8;
         border-bottom: 0px solid var(--very-light-pink); 
         font-size: 36px;
-        padding: 250px;
+        padding: 420px;
         
     } 
     .resenas {
@@ -537,9 +537,12 @@
     .logo {
         width: 90%;
     }
-
+    .mantenimiento {
+        padding: 100px;
+        font-size: 25px;
     }
 
+    }
 
     @media (max-width: 900px) 
     {
@@ -570,7 +573,7 @@
     .contactos{ text-align: center;}
 
     .mantenimiento {
-        padding: 80px;
+        padding: 100px;
         font-size: 25px;
     }
     .untitled-total {
@@ -587,6 +590,10 @@
         font-size: 25px;
     } 
 
+    .logo {
+        width: 100%;
+    }
+
     }
 
     @media (max-width: 1200px) {
@@ -594,8 +601,13 @@
         display: grid;
     }
 
+    .mantenimiento {
+        padding: 150px;
+        font-size: 25px;
+    }
+
     .logo {
-        width: 80%;
+        width: 60%;
     }
    
     }  
